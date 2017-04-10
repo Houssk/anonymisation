@@ -106,7 +106,7 @@ namespace AnoDCM
 
          //-------------------------------------------------------------------------------------------------------
 
-         public void ValidationAnon(int PPN, MySqlConnection conn, bool valid)
+         public void ValidationAnonA(int PPN, MySqlConnection conn, bool valid)
          {
              bool ok = valid;
              //ok = false;
@@ -121,10 +121,32 @@ namespace AnoDCM
              MySqlConnection connect;
              connect = conn;
     
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisation = @val WHERE ppn_operation="+PPN,connect);
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisationA = @val WHERE ppn_operation="+PPN,connect);
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
              
+             reader = maCommande.ExecuteReader();
+
+         }
+         public void ValidationAnonM(int PPN, MySqlConnection conn, bool valid)
+         {
+             bool ok = valid;
+             //ok = false;
+             int val = 0;
+
+             if (ok == true)
+             {
+                 val = 1;
+             }
+             else val = 0;
+
+             MySqlConnection connect;
+             connect = conn;
+
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisationM = @val WHERE ppn_operation=" + PPN, connect);
+             maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
+             MySqlDataReader reader;
+
              reader = maCommande.ExecuteReader();
 
          }

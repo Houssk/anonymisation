@@ -65,8 +65,17 @@ namespace AnoDCM
             // Méthode qui va lancer l'anonymisation des DICOM avec la fonction Anonymize de la classe Traitement. Cette focntion retourne un booléen pour valider le bon fonctionnement de celle ci.
             validation=Anonymisation.Anonymize(extract, PPN_plateforme);
 
+            
             // Méthode qui va valider l'anonymisation des DICOM et qui va aller écrire dans la base de données la valeur correspondante (1: A fonctionné 0: N'a pas fonctionné)
-            Anonymisation.ValidationAnon(PPN, connect, validation);
+           if(zip =="mandibule")
+           {
+               Anonymisation.ValidationAnonM(PPN, connect, validation);
+           }
+            
+            if(zip == "angioscanner")
+            {
+                Anonymisation.ValidationAnonA(PPN, connect, validation);
+            }
    
             // Méthode qui permet de créer un dossier compressé des images DICOM anonymisées
              //ZipFile.CreateFromDirectory(@"\anonymisation", zip+".zip");
