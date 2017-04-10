@@ -55,9 +55,6 @@
       <HintPath>.\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="SimpleITKCSharpManaged">
-      <HintPath>..\..\..\..\..\Downloads\SimpleITK-0.9.0-CSharp-win64-x64\SimpleITK-0.9.0-CSharp-win64-x64\SimpleITKCSharpManaged.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -78,11 +75,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SimpleITKCSharpNative.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
