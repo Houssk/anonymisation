@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MessagingToolkit.Barcode</id>
+    <version>1.7.0.2</version>
+    <title>MessagingToolkit.Barcode</title>
+    <authors>Twit88.com</authors>
+    <owners>Twit88.com</owners>
+    <licenseUrl>http://platform.twit88.com/projects/messagingtoolkit/wiki/Wiki_-_Licensing</licenseUrl>
+    <projectUrl>http://platform.twit88.com/projects/mt-barcode</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MessagingToolkit Barcode library is a C# barcode library that can be used in
+
+* WinForms applications
+* Windows WPF applications
+* ASP.NET web applications
+* Silverlight 3, 4 and 5 applications
+* Console applications
+* Windows Service
+* Windows Phone 7.x and 8.0 applications
+* Windows 8 applications
+* Windows 8 JavaScript applications
+
+The library current supports encoding and decoding of the following barcode types
+
+Encoding
+
+* QR Code
+* Data Matrix
+* PDF 417
+* Aztec
+* Bookland/ISBN
+* Codabar
+* Code 11
+* Code 128
+* Code 128-A
+* Code 128-B
+* Code 128-C
+* Code 39
+* Code 39 Extended
+* Code 93
+* EAN-13
+* EAN-8
+* FIM
+* Interleaved 2 of 5
+* ITF-14
+* LOGMARS
+* MSI 2 Mod 10
+* MSI Mod 10
+* MSI Mod 11
+* PostNet
+* Standard 2 of 5
+* Telepen
+* UPC 2 Digit Ext.
+* UPC 5 Digit Ext.
+* UPC-A
+* UPC-E
+
+Decoding
+
+* UPC-A
+* UPC-E
+* EAN-8
+* EAN-13
+* Code 39
+* Code 93
+* Code 128
+* QR Code
+* ITF
+* Codabar
+* RSS-14
+* Data Matrix
+* PDF 417
+* Aztec
+* MaxiCode
+* MSI Mod 10</description>
+    <summary>MessagingToolkit Barcode library is a C# barcode library.</summary>
+    <releaseNotes>* Aztec encoding is supported.
+* Added sample source code for Windows Phone 8.</releaseNotes>
+    <tags>MessagingToolkit Barcode scanner generator 1D 2D Data Matrix PDF417 Aztec QRCode EAN-8 EAN-13</tags>
+  </metadata>
+</package>

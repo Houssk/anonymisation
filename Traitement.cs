@@ -35,11 +35,15 @@ namespace AnoDCM
 
 
              // renseigner les paramètres de la connexion :
-             builder.DataSource = "127.0.0.1:3306";     // adresse du serveur
+             builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
-             builder.UserID = "root";              // id de l'utilisateur
+             builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
              builder.Password = "On30rth0M3d!cal";                // mot de passe
 
+             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
+             builder.InitialCatalog = "globald";   // nom bdd
+             builder.UserID = "root";              // id de l'utilisateur                                           VERSION TEST
+             builder.Password = "";                // mot de passe*/
 
              // enfin passer la ConnectionString à l'objet SqlConnection
              string connString = builder.ConnectionString;

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DotImaging.BitmapInterop</id>
+    <version>4.8.3</version>
+    <title>DotImaging.BitmapInterop</title>
+    <authors>Darko Jurić</authors>
+    <owners>Darko Jurić</owners>
+    <licenseUrl>https://raw.githubusercontent.com/dajuric/dot-imaging/master/Deployment/Licence.txt</licenseUrl>
+    <projectUrl>https://github.com/dajuric/dot-imaging</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/dajuric/dot-imaging/master/Deployment/Logo/logo-small.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Provides extensions for interoperability with System.Drawing.Bitmap, Point, PointF, Color and drawing extensions.</description>
+    <summary>Interoperability extensions for System.Drawing.* and drawing extensions.</summary>
+    <tags>imaging interoperability extensions GDI</tags>
+    <dependencies>
+      <dependency id="DotImaging.GenericImage" version="4.8.3" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

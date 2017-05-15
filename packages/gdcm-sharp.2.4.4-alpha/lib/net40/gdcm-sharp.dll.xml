@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>gdcm-sharp</name>
+    </assembly>
+    <members>
+        <member name="T:gdcm.CharSetArrayType.CharSetArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.DataSetArrayType.DataSetArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.DoubleArrayType.DoubleArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.FileArrayType.FileArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.FilenamesType.FilenamesTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.KeyValuePairArrayType.KeyValuePairArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.PresentationContextArrayType.PresentationContextArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.TagArrayType.TagArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.UIntArrayType.UIntArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+        <member name="T:gdcm.UShortArrayType.UShortArrayTypeEnumerator">
+            Note that the IEnumerator documentation requires an InvalidOperationException to be thrown
+            whenever the collection is modified. This has been done for changes in the size of the
+            collection but not when one of the elements of the collection is modified as it is a bit
+            tricky to detect unmanaged code that modifies the collection under our feet.
+        </member>
+    </members>
+</doc>

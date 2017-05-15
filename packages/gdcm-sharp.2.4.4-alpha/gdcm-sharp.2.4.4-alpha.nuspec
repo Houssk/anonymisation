@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>gdcm-sharp</id>
+    <version>2.4.4-alpha</version>
+    <title>gdcm-sharp</title>
+    <authors>Clinical Graphics</authors>
+    <owners>Clinical Graphics</owners>
+    <licenseUrl>http://gdcm.sourceforge.net/Copyright.html</licenseUrl>
+    <projectUrl>http://gdcm.sourceforge.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Prebuilt C# wrapper binaries of the GDCM (Grassroots DICOM) DICOM library (http://gdcm.sourceforge.net/). Packaged by Clinical Graphics (https://www.clinicalgraphics.com/).</description>
+    <summary />
+    <copyright>Copyright (c) 2006-2011 Mathieu Malaterre, Copyright (c) 1993-2005 CREATIS, (CREATIS = Centre de Recherche et d'Applications en Traitement de l'Image), All rights reserved.</copyright>
+    <tags>gdcm dicom</tags>
+    <references>
+      <reference file="gdcm-sharp.dll" />
+    </references>
+  </metadata>
+</package>

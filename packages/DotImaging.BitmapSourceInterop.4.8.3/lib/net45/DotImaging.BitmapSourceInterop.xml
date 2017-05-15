@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DotImaging.BitmapSourceInterop</name>
+    </assembly>
+    <members>
+        <member name="T:DotImaging.BitmpSourceConversionExtensions">
+            <summary>
+            Provides conversion extension methods between generic image and <see cref="T:System.Windows.Media.Imaging.BitmapSource"/>.
+            </summary>
+        </member>
+        <member name="M:DotImaging.BitmpSourceConversionExtensions.ToArray``1(System.Windows.Media.Imaging.BitmapSource)">
+            <summary>
+            Converts the specified bitmap into the managed array.
+            </summary>
+            <typeparam name="TColor">Color type.</typeparam>
+            <param name="bmpSource">Bitmap source.</param>
+            <returns>Managed array.</returns>
+        </member>
+        <member name="M:DotImaging.BitmpSourceConversionExtensions.ToBitmapSource(DotImaging.Bgr{System.Byte}[0:,0:])">
+            <summary>
+            Converts the specified managed array to the corresponding bitmap source.
+            </summary>
+            <param name="image">Managed array.</param>
+            <returns>Bitmap source.</returns>
+        </member>
+        <member name="M:DotImaging.BitmpSourceConversionExtensions.ToBitmapSource(DotImaging.Bgra{System.Byte}[0:,0:])">
+            <summary>
+            Converts the specified managed array to the corresponding bitmap source.
+            </summary>
+            <param name="image">Managed array.</param>
+            <returns>Bitmap source.</returns>
+        </member>
+        <member name="M:DotImaging.BitmpSourceConversionExtensions.ToBitmapSource(DotImaging.Gray{System.Byte}[0:,0:])">
+            <summary>
+            Converts the specified managed array to the corresponding bitmap source.
+            </summary>
+            <param name="image">Managed array.</param>
+            <returns>Bitmap source.</returns>
+        </member>
+        <member name="M:DotImaging.BitmpSourceConversionExtensions.ToBitmapSource(DotImaging.Gray{System.Int16}[0:,0:])">
+            <summary>
+            Converts the specified managed array to the corresponding bitmap source.
+            </summary>
+            <param name="image">Managed array.</param>
+            <returns>Bitmap source.</returns>
+        </member>
+    </members>
+</doc>

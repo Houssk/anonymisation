@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Accord.Statistics</id>
+    <version>3.0.2</version>
+    <title>Accord.Statistics</title>
+    <authors>Accord.NET</authors>
+    <owners>Accord.NET</owners>
+    <licenseUrl>http://accord-framework.net/license.txt</licenseUrl>
+    <projectUrl>http://accord-framework.net/</projectUrl>
+    <iconUrl>http://accord-framework.net/logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Contains probability distributions, statistical models and methods such as Linear and Logistic regression, Hidden Markov Models, (Hidden) Conditional Random Fields, Principal Component Analysis, Partial Least Squares, Discriminant Analysis, Kernel methods and functions and many other related techniques. This package is part of the Accord.NET Framework.</description>
+    <summary>Accord.NET Statistics Library from the Accord.NET Framework</summary>
+    <tags>accord.net aforge.net framework statistics kernel methods pca kpca least squares markov models conditional random fields hmm crf hcrf logistic linear regression</tags>
+    <dependencies>
+      <dependency id="Accord" version="3.0.2" />
+      <dependency id="Accord.Math" version="3.0.2" />
+    </dependencies>
+  </metadata>
+</package>
