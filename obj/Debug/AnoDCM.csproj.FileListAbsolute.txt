@@ -28,7 +28,6 @@ C:\Users\Utilisateur\Desktop\Travail interne\Anonymisation\AnoDCM\AnoDCM\bin\Deb
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe.config
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.exe
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.pdb
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\SimpleITKCSharpNative.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.pdb
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmcharls.dll

@@ -73,7 +73,7 @@ namespace AnoDCM
              string cheminDoss= chemin;           
              string patname = "PPN "+PPN;
 
-             filename = System.IO.Directory.GetFiles(cheminDoss);
+             filename = System.IO.Directory.GetFiles(cheminDoss,"*.*", SearchOption.AllDirectories);
              
              Tag pattag = new Tag(0x0010, 0x0010);
              bool ret = true;
