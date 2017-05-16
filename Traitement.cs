@@ -85,7 +85,7 @@ namespace AnoDCM
               int comptReadAnoF = 0;
             
              
-             Console.WriteLine(filename.Length);
+            // Console.WriteLine(filename.Length);
   
              for (int i = debut; i < fin; i++)
              {
