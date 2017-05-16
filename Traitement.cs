@@ -40,7 +40,7 @@ namespace AnoDCM
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
              builder.Password = "On30rth0M3d!cal";                // mot de passe
 
-             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
+            /* builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION TEST
              builder.Password = "";                // mot de passe*/
@@ -182,6 +182,7 @@ namespace AnoDCM
 
          }
 
+        // Nouvelle fonction pour la gestion du nombre de fichiers contenus dans un dossier
         public bool GestionNbFichier(string chemin, string nom)
          {
            bool val = true;
