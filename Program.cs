@@ -11,6 +11,7 @@ using System.Security.Permissions;
 using gdcm;
 
 
+
 namespace AnoDCM
 {
     class Program
@@ -62,9 +63,11 @@ namespace AnoDCM
             MySqlConnection connect = new MySqlConnection();
             connect = Anonymisation.ConnectBDD();
 
-            // Méthode qui va lancer l'anonymisation des DICOM avec la fonction Anonymize de la classe Traitement. Cette focntion retourne un booléen pour valider le bon fonctionnement de celle ci.
-            validation=Anonymisation.Anonymize(extract, PPN_plateforme);
 
+            // Méthode qui va lancer l'anonymisation des DICOM avec la fonction Anonymize de la classe Traitement. Cette focntion retourne un booléen pour valider le bon fonctionnement de celle ci.
+           // validation=Anonymisation.Anonymize(extract, PPN_plateforme,0,500);
+
+            validation = Anonymisation.GestionNbFichier(extract, PPN_plateforme);
             
             // Méthode qui va valider l'anonymisation des DICOM et qui va aller écrire dans la base de données la valeur correspondante (1: A fonctionné 0: N'a pas fonctionné)
            if(zip =="mandibule")
