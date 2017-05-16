@@ -35,15 +35,15 @@ namespace AnoDCM
 
 
              // renseigner les paramètres de la connexion :
-             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
-             builder.InitialCatalog = "globald";   // nom bdd
-             builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
-             builder.Password = "On30rth0M3d!cal";                // mot de passe*/
-
              builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
+             builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
+             builder.Password = "On30rth0M3d!cal";                // mot de passe
+
+             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
+             builder.InitialCatalog = "globald";   // nom bdd
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION TEST
-             builder.Password = "";                // mot de passe
+             builder.Password = "";                // mot de passe*/
 
              // enfin passer la ConnectionString à l'objet SqlConnection
              string connString = builder.ConnectionString;
@@ -151,8 +151,8 @@ namespace AnoDCM
 
              MySqlConnection connect;
              connect = conn;
-    
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anon = @val WHERE ppn_operation="+PPN,connect);
+
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisationA = @val WHERE ppn_operation=" + PPN, connect);
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
              
@@ -201,8 +201,8 @@ namespace AnoDCM
                     nb++;
                 }
             }
-            Console.WriteLine("nb" + nb);
-            Console.WriteLine("modulo:" +modulo);
+           // Console.WriteLine("nb" + nb);
+            //Console.WriteLine("modulo:" +modulo);
 
             for(int i=0; i<(nb*500) ; i= i+500)
             {
