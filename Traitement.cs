@@ -35,15 +35,15 @@ namespace AnoDCM
 
 
              // renseigner les paramètres de la connexion :
-             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
-             builder.InitialCatalog = "globald";   // nom bdd
-             builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
-             builder.Password = "On30rth0M3d!cal";                // mot de passe*/
-
              builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
+             builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
+             builder.Password = "On30rth0M3d!cal";                // mot de passe
+
+             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
+             builder.InitialCatalog = "globald";   // nom bdd
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION TEST
-             builder.Password = "";                // mot de passe
+             builder.Password = "";                // mot de passe*/
 
              // enfin passer la ConnectionString à l'objet SqlConnection
              string connString = builder.ConnectionString;
@@ -153,7 +153,7 @@ namespace AnoDCM
              MySqlConnection connect;
              connect = conn;
 
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anon= @val WHERE ppn_operation=" + PPN, connect); //anonymisationA
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anonymisationA= @val WHERE ppn_operation=" + PPN, connect); //anonymisationA
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
              
@@ -175,7 +175,7 @@ namespace AnoDCM
              MySqlConnection connect;
              connect = conn;
 
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anon= @val WHERE ppn_operation=" + PPN, connect); //anonymisationM
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anonymisationM= @val WHERE ppn_operation=" + PPN, connect); //anonymisationM
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
 
