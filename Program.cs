@@ -56,6 +56,7 @@ namespace AnoDCM
 
             }
 
+            
             // Déclaration et Initialisation de la classe traitement
             Traitement Anonymisation = new Traitement();
 
@@ -70,7 +71,7 @@ namespace AnoDCM
             validation = Anonymisation.GestionNbFichier(extract, PPN_plateforme);
             
             // Méthode qui va valider l'anonymisation des DICOM et qui va aller écrire dans la base de données la valeur correspondante (1: A fonctionné 0: N'a pas fonctionné)
-           if(zip =="mandibule")
+           if(zip == "mandibule")
            {
                Anonymisation.ValidationAnonM(PPN, connect, validation);
            }

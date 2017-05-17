@@ -35,15 +35,15 @@ namespace AnoDCM
 
 
              // renseigner les paramètres de la connexion :
-             builder.DataSource = "127.0.0.1";     // adresse du serveur
+             /*builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION SERVEUR
-             builder.Password = "On30rth0M3d!cal";                // mot de passe
+             builder.Password = "On30rth0M3d!cal";                // mot de passe*/
 
-            /* builder.DataSource = "127.0.0.1";     // adresse du serveur
+             builder.DataSource = "127.0.0.1";     // adresse du serveur
              builder.InitialCatalog = "globald";   // nom bdd
              builder.UserID = "root";              // id de l'utilisateur                                           VERSION TEST
-             builder.Password = "";                // mot de passe*/
+             builder.Password = "";                // mot de passe
 
              // enfin passer la ConnectionString à l'objet SqlConnection
              string connString = builder.ConnectionString;
@@ -66,23 +66,24 @@ namespace AnoDCM
 
            //-------------------------------------------------------------------------------------------------------
 
-         public void Anonymize(string chemin, string nom,int debut, int fin)
+         public void Anonymize(string chemin, string nom,int debut, int fin, string [] filename)
          {
-             string[] filename = new string[0];
+             
              string PPN = nom;
              string cheminDoss= chemin;           
              string patname = "PPN "+PPN;
 
-             filename = System.IO.Directory.GetFiles(cheminDoss,"*.*", SearchOption.AllDirectories);
+             // SearchOption.AllDirectories permet de gérer tous les répertoires et les sous repertoires pour accéder au dossier contenant les images
+             
              int nbfilename = System.IO.Directory.GetFiles(cheminDoss, "*.*", SearchOption.AllDirectories).Length;
              
              Tag pattag = new Tag(0x0010, 0x0010);
              bool ret = true;
              bool val = false;
-             int comptReadFileT = 0;
+          /*   int comptReadFileT = 0;
              int comptReadFileF = 0;
              int comptReadAnoT = 0;
-              int comptReadAnoF = 0;
+              int comptReadAnoF = 0;*/
             
              
              Console.WriteLine(filename.Length);
@@ -96,24 +97,24 @@ namespace AnoDCM
                 // ret = reader.Read();
                  reader.SetFileName(filename[i]);
                  reader.Read();
-                 if (reader.Read()) {
+                 /*  if (reader.Read()) {
                      comptReadFileT++;
                  }
                  else
                  {
                      comptReadFileF++;
-                 }
+                 }*/
 
                  ano.SetFile(reader.GetFile());
                  ano.Replace(pattag, patname);
-                 if (!ano.Replace(pattag, patname))
+               /*  if (!ano.Replace(pattag, patname))
                  {
                      comptReadAnoT++;
                  }
                  else
                  {
                      comptReadAnoF++;
-                 }
+                 }*/
                  ano.RemovePrivateTags();
 
 
@@ -152,7 +153,7 @@ namespace AnoDCM
              MySqlConnection connect;
              connect = conn;
 
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisationA = @val WHERE ppn_operation=" + PPN, connect);
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anon= @val WHERE ppn_operation=" + PPN, connect); //anonymisationA
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
              
@@ -174,7 +175,7 @@ namespace AnoDCM
              MySqlConnection connect;
              connect = conn;
 
-             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET anonymisationM = @val WHERE ppn_operation=" + PPN, connect);
+             MySqlCommand maCommande = new MySqlCommand("UPDATE  operation SET  anon= @val WHERE ppn_operation=" + PPN, connect); //anonymisationM
              maCommande.Parameters.Add("@val", MySqlDbType.Int32).Value = val;
              MySqlDataReader reader;
 
@@ -186,6 +187,8 @@ namespace AnoDCM
         public bool GestionNbFichier(string chemin, string nom)
          {
            bool val = true;
+           string[] filename = new string[0];
+           filename = System.IO.Directory.GetFiles(chemin, "*.*", SearchOption.AllDirectories);
            int nbfilename = System.IO.Directory.GetFiles(chemin, "*.*", SearchOption.AllDirectories).Length;
 
            int nb = nbfilename / 500;
@@ -209,18 +212,18 @@ namespace AnoDCM
             {
                 if(nb ==1)
                 {
-                    Anonymize(chemin, nom, 0, nbfilename);
+                    Anonymize(chemin, nom, 0, nbfilename, filename);
                 }
 
                 else
                 {
                     if( (nb*500) > (i+500))
                     {
-                        Anonymize(chemin, nom, i, i + 500);
+                        Anonymize(chemin, nom, i, i + 500,filename);
                     }
                     else
                     {
-                        Anonymize(chemin, nom, i, nbfilename);
+                        Anonymize(chemin, nom, i, nbfilename,filename);
                     }
                 }
             }

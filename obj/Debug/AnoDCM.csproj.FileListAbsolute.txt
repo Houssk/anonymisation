@@ -25,17 +25,12 @@ C:\Users\Utilisateur\Desktop\Travail interne\Anonymisation\AnoDCM\AnoDCM\bin\Deb
 C:\Users\Utilisateur\Desktop\Travail interne\Anonymisation\AnoDCM\AnoDCM\bin\Debug\socketxx.dll
 C:\Users\Utilisateur\Desktop\Travail interne\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcm-sharp.dll
 C:\Users\Utilisateur\Desktop\Travail interne\Anonymisation\AnoDCM\AnoDCM\bin\Debug\SimpleITKCSharpManaged.dll
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe.config
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.exe
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.pdb
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.pdb
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmcharls.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmCommon.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmDICT.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmDSED.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmexpat.dll
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmgetopt.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmIOD.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmjpeg12.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcmjpeg16.dll
@@ -49,8 +44,6 @@ C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\socketxx.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\gdcm-sharp.dll
 C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\MySql.Data.dll
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.csprojResolveAssemblyReference.cache
-C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\Accord.dll.config
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe.config
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\obj\Debug\AnoDCM.exe
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\obj\Debug\AnoDCM.pdb
@@ -77,3 +70,7 @@ C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\bin\Debug\socketxx.dll
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\bin\Debug\gdcm-sharp.dll
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\bin\Debug\MySql.Data.dll
 C:\Users\PC0012\Desktop\AnoDCM\AnoDCM\obj\Debug\AnoDCM.csprojResolveAssemblyReference.cache
+C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\Accord.dll.config
+C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\bin\Debug\AnoDCM.exe.config
+C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.exe
+C:\Users\PC0012\Desktop\Juliette\Docs en travail\Anonymisation\AnoDCM\AnoDCM\obj\Debug\AnoDCM.pdb
