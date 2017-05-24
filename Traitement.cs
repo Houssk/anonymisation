@@ -130,7 +130,7 @@ namespace AnoDCM
 
                 }
                 // return ret;
-                Console.WriteLine(compteurWrite);
+              //  Console.WriteLine(compteurWrite);
             }
 
             val = ret;
